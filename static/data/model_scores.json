@@ -1,0 +1,467 @@
+{
+    "EditReward-Bench": {
+        "GPT-4.1": {
+            "Accuracy": {
+                "Prompt Following": 0.673,
+                "Consistency": 0.602,
+                "Overall": 0.705
+            }
+        },
+        "GPT-5": {
+            "Accuracy": {
+                "Prompt Following": 0.777,
+                "Consistency": 0.669,
+                "Overall": 0.755
+            }
+        },
+        "Gemini2.5-Pro": {
+            "Accuracy": {
+                "Prompt Following": 0.703,
+                "Consistency": 0.560,
+                "Overall": 0.722
+            }
+        },
+        "Qwen2.5-VL-7B": {
+            "Accuracy": {
+                "Prompt Following": 0.458,
+                "Consistency": 0.325,
+                "Overall": 0.432
+            }
+        },
+        "Qwen2.5-VL-32B": {
+            "Accuracy": {
+                "Prompt Following": 0.498,
+                "Consistency": 0.376,
+                "Overall": 0.563
+            }
+        },
+        "Qwen2.5-VL-72B": {
+            "Accuracy": {
+                "Prompt Following": 0.540,
+                "Consistency": 0.435,
+                "Overall": 0.621
+            }
+        },
+        "EditScore-7B": {
+            "Accuracy": {
+                "Prompt Following": 0.592,
+                "Consistency": 0.591,
+                "Overall": 0.659
+            }
+        },
+        "EditScore-32B": {
+            "Accuracy": {
+                "Prompt Following": 0.638,
+                "Consistency": 0.556,
+                "Overall": 0.680
+            }
+        },
+        "EditScore-72B": {
+            "Accuracy": {
+                "Prompt Following": 0.635,
+                "Consistency": 0.586,
+                "Overall": 0.703
+            }
+        },
+        "PaCo-Reward-7B-Fast": {
+            "Accuracy": {
+                "Prompt Following": 0.748,
+                "Consistency": 0.697,
+                "Overall": 0.728
+            }
+        },
+        "PaCo-Reward-7B": {
+            "Accuracy": {
+                "Prompt Following": 0.777,
+                "Consistency": 0.709,
+                "Overall": 0.751
+            }
+        }
+    },
+    "ConsistencyRank": {
+        "Clip-I": {
+            "Accuracy": 0.394,
+            "tau": 0.178,
+            "rho": 0.206,
+            "T1-B1": 0.475
+        },
+        "DreamSim": {
+            "Accuracy": 0.403,
+            "tau": 0.184,
+            "rho": 0.214,
+            "T1-B1": 0.493
+        },
+        "InternVL3.5-8B": {
+            "Accuracy": 0.359,
+            "tau": 0.149,
+            "rho": 0.176,
+            "T1-B1": 0.420
+        },
+        "Qwen2.5-VL-7B": {
+            "Accuracy": 0.344,
+            "tau": 0.118,
+            "rho": 0.138,
+            "T1-B1": 0.401
+        },
+        "Qwen2.5-VL-32B": {
+            "Accuracy": 0.340,
+            "tau": 0.106,
+            "rho": 0.127,
+            "T1-B1": 0.395
+        },
+        "Qwen2.5-VL-72B": {
+            "Accuracy": 0.342,
+            "tau": 0.117,
+            "rho": 0.137,
+            "T1-B1": 0.398
+        },
+        "PaCo-Reward-7B-Fast": {
+            "Accuracy": 0.441,
+            "tau": 0.240,
+            "rho": 0.278,
+            "T1-B1": 0.544
+        },
+        "PaCo-Reward-7B": {
+            "Accuracy": 0.449,
+            "tau": 0.250,
+            "rho": 0.288,
+            "T1-B1": 0.557
+        }
+    },
+    "T2IS-Bench": {
+        "GPT-4o": {
+            "Aesthetics": 0.445,
+            "Prompt Alignment": {
+                "Entity": 0.663,
+                "Attribute": 0.683,
+                "Relation": 0.693
+            },
+            "Visual Consistency": {
+                "Identity": "0.400 / 0.792",
+                "Style": "0.463 / 0.795",
+                "Logic": "0.383 / 0.840"
+            },
+            "Avg.": "0.501 / 0.697"
+        },
+        "Gemini 2.0 Flash": {
+            "Aesthetics": 0.430,
+            "Prompt Alignment": {
+                "Entity": 0.738,
+                "Attribute": 0.747,
+                "Relation": 0.743
+            },
+            "Visual Consistency": {
+                "Identity": "0.428 / 0.750",
+                "Style": "0.383 / 0.739",
+                "Logic": "0.392 / 0.793"
+            },
+            "Avg.": "0.509 / 0.673"
+        },
+        "AutoT2IS + GPT-4o": {
+            "Aesthetics": 0.567,
+            "Prompt Alignment": {
+                "Entity": 0.754,
+                "Attribute": 0.761,
+                "Relation": 0.763
+            },
+            "Visual Consistency": {
+                "Identity": "0.441 / 0.806",
+                "Style": "0.520 / 0.825",
+                "Logic": "0.416 / 0.860"
+            },
+            "Avg.": "0.571 / 0.754"
+        },
+        "Seedream 4.0": {
+            "Aesthetics": 0.551,
+            "Prompt Alignment": {
+                "Entity": 0.813,
+                "Attribute": 0.800,
+                "Relation": 0.805
+            },
+            "Visual Consistency": {
+                "Identity": "0.486 / 0.809",
+                "Style": "0.479 / 0.763",
+                "Logic": "0.458 / 0.862"
+            },
+            "Avg.": "0.589 / 0.758"
+        },
+        "Gemini & SD3": {
+            "Aesthetics": 0.500,
+            "Prompt Alignment": {
+                "Entity": 0.796,
+                "Attribute": 0.794,
+                "Relation": 0.789
+            },
+            "Visual Consistency": {
+                "Identity": "0.287 / 0.640",
+                "Style": "0.244 / 0.621",
+                "Logic": "0.320 / 0.755"
+            },
+            "Avg.": "0.480 / 0.648"
+        },
+        "Gemini & Pixart": {
+            "Aesthetics": 0.447,
+            "Prompt Alignment": {
+                "Entity": 0.743,
+                "Attribute": 0.765,
+                "Relation": 0.747
+            },
+            "Visual Consistency": {
+                "Identity": "0.206 / 0.615",
+                "Style": "0.279 / 0.638",
+                "Logic": "0.268 / 0.737"
+            },
+            "Avg.": "0.440 / 0.617"
+        },
+        "Gemini & Hunyuan": {
+            "Aesthetics": 0.410,
+            "Prompt Alignment": {
+                "Entity": 0.758,
+                "Attribute": 0.774,
+                "Relation": 0.765
+            },
+            "Visual Consistency": {
+                "Identity": "0.197 / 0.605",
+                "Style": "0.276 / 0.622",
+                "Logic": "0.271 / 0.741"
+            },
+            "Avg.": "0.436 / 0.615"
+        },
+        "Gemini & FLUX.1-dev": {
+            "Aesthetics": 0.533,
+            "Prompt Alignment": {
+                "Entity": 0.791,
+                "Attribute": 0.790,
+                "Relation": 0.786
+            },
+            "Visual Consistency": {
+                "Identity": "0.249 / 0.636",
+                "Style": "0.302 / 0.619",
+                "Logic": "0.328 / 0.754"
+            },
+            "Avg.": "0.490 / 0.659"
+        },
+        "AutoT2IS": {
+            "Aesthetics": 0.520,
+            "Prompt Alignment": {
+                "Entity": 0.729,
+                "Attribute": 0.756,
+                "Relation": 0.743
+            },
+            "Visual Consistency": {
+                "Identity": "0.359 / 0.723",
+                "Style": "0.414 / 0.737",
+                "Logic": "0.356 / 0.794"
+            },
+            "Avg.": "0.515 / 0.686"
+        },
+        "FLUX.1-dev + PaCo-Reward-7B": {
+            "Aesthetics": 0.555,
+            "Prompt Alignment": {
+                "Entity": 0.721,
+                "Attribute": 0.732,
+                "Relation": 0.731
+            },
+            "Visual Consistency": {
+                "Identity": "0.508 / 0.837",
+                "Style": "0.549 / 0.867",
+                "Logic": "0.422 / 0.859"
+            },
+            "Avg.": "0.576 / 0.757"
+        }
+    },
+    "GEdit-Bench": {
+        "SeedEdit3.0": {
+            "EN-I": {
+                "SC": 7.396,
+                "PQ": 7.899,
+                "Overall": 7.137
+            },
+            "EN": {
+                "SC": 7.222,
+                "PQ": 7.885,
+                "Overall": 6.983
+            },
+            "CN-I": {
+                "SC": 7.370,
+                "PQ": 7.870,
+                "Overall": 7.105
+            },
+            "CN": {
+                "SC": 7.195,
+                "PQ": 7.851,
+                "Overall": 6.942
+            }
+        },
+        "GPT-Image-1": {
+            "EN-I": {
+                "SC": 7.867,
+                "PQ": 8.097,
+                "Overall": 7.590
+            },
+            "EN": {
+                "SC": 7.743,
+                "PQ": 8.133,
+                "Overall": 7.494
+            },
+            "CN-I": {
+                "SC": 7.840,
+                "PQ": 8.075,
+                "Overall": 7.560
+            },
+            "CN": {
+                "SC": 7.708,
+                "PQ": 8.095,
+                "Overall": 7.451
+            }
+        },
+        "OmniGen": {
+            "EN-I": {
+            "SC": 6.037,
+            "PQ": 5.856,
+            "Overall": 5.154
+            },
+            "EN": {
+            "SC": 5.879,
+            "PQ": 5.871,
+            "Overall": 5.005
+            },
+            "CN-I": {
+            "SC": 6.015,
+            "PQ": 5.830,
+            "Overall": 5.122
+            },
+            "CN": {
+            "SC": 5.850,
+            "PQ": 5.845,
+            "Overall": 4.976
+            }
+        },
+        "OmniGen2": {
+            "EN": {
+            "SC": 6.72,
+            "PQ": 7.20,
+            "Overall": 6.28
+            }
+        },
+        "OmniGen2 + EditScore": {
+            "EN": {
+            "SC": 7.20,
+            "PQ": 7.46,
+            "Overall": 6.68
+            }
+        },
+        "Step1X-Edit": {
+            "EN-I": {
+            "SC": 7.289,
+            "PQ": 6.962,
+            "Overall": 6.618
+            },
+            "EN": {
+            "SC": 7.131,
+            "PQ": 6.998,
+            "Overall": 6.444
+            },
+            "CN-I": {
+            "SC": 7.464,
+            "PQ": 7.076,
+            "Overall": 6.779
+            },
+            "CN": {
+            "SC": 7.647,
+            "PQ": 7.398,
+            "Overall": 6.983
+            }
+        },
+        "Step1X-Edit + EditReward": {
+            "EN-I": {
+            "SC": 7.895,
+            "PQ": 6.946,
+            "Overall": 7.131
+            },
+            "EN": {
+            "SC": 7.854,
+            "PQ": 6.931,
+            "Overall": 7.086
+            },
+            "CN-I": {
+            "SC": 7.757,
+            "PQ": 7.024,
+            "Overall": 7.074
+            },
+            "CN": {
+            "SC": 7.658,
+            "PQ": 6.995,
+            "Overall": 7.001
+            }
+        },
+        "FLUX.1-Kontext": {
+            "EN-I": {
+            "SC": 6.842,
+            "PQ": 6.888,
+            "Overall": 6.143
+            },
+            "EN": {
+            "SC": 6.599,
+            "PQ": 6.873,
+            "Overall": 5.956
+            }
+        },
+        "FLUX.1-Kontext + PaCo-Reward-7B": {
+            "EN-I": {
+            "SC": 7.279,
+            "PQ": 7.036,
+            "Overall": 6.636
+            },
+            "EN": {
+            "SC": 7.033,
+            "PQ": 7.088,
+            "Overall": 6.469
+            }
+        },
+        "Qwen-Image-Edit":{
+            "EN-I": {
+                "SC": 7.746,
+                "PQ": 7.805,
+                "Overall": 7.307
+            },
+            "EN": {
+                "SC": 7.642,
+                "PQ": 7.807,
+                "Overall": 7.223
+            },
+            "CN-I": {
+                "SC": 7.727,
+                "PQ": 7.977,
+                "Overall": 7.344
+            },
+            "CN": {
+                "SC": 7.633,
+                "PQ": 7.938,
+                "Overall": 7.264
+            }            
+        },
+        "Qwen-Image-Edit + PaCo-Reward-7B": {
+            "EN-I": {
+                "SC": 7.799,
+                "PQ": 8.053,
+                "Overall": 7.451
+            },
+            "EN": {
+                "SC": 7.693,
+                "PQ": 7.987,
+                "Overall": 7.325
+            },
+            "CN-I": {
+                "SC": 7.866,
+                "PQ": 8.125,
+                "Overall": 7.520
+            },
+            "CN": {
+                "SC": 7.678,
+                "PQ": 8.093,
+                "Overall": 7.366
+            }
+        }  
+    }   
+}
