@@ -154,7 +154,7 @@
       <div class="video-carousel-container">
         <!-- 视频网格 -->
         <div class="training-videos-grid">
-          <!-- Page 1: Videos 1-4 -->
+          <!-- Page 1 -->
           <div class="video-page active">
             <div class="video-card">
               <div class="video-container">
@@ -163,6 +163,9 @@
                 </video>
               </div>
             </div>
+          </div>
+          <!-- Page 2 -->
+          <div class="video-page">
             <div class="video-card">
               <div class="video-container">
                 <video controls loop muted playsinline preload="none" autoplay>
@@ -170,6 +173,9 @@
                 </video>
               </div>
             </div>
+          </div>
+          <!-- Page 3 -->
+          <div class="video-page">
             <div class="video-card">
               <div class="video-container">
                 <video controls loop muted playsinline preload="none" autoplay>
@@ -177,6 +183,9 @@
                 </video>
               </div>
             </div>
+          </div>
+          <!-- Page 4 -->
+          <div class="video-page">
             <div class="video-card">
               <div class="video-container">
                 <video controls loop muted playsinline preload="none" autoplay>
@@ -185,7 +194,7 @@
               </div>
             </div>
           </div>
-          <!-- Page 2: Videos 5-8 -->
+          <!-- Page 5 -->
           <div class="video-page">
             <div class="video-card">
               <div class="video-container">
@@ -194,6 +203,9 @@
                 </video>
               </div>
             </div>
+          </div>
+          <!-- Page 6 -->
+          <div class="video-page">
             <div class="video-card">
               <div class="video-container">
                 <video controls loop muted playsinline preload="none" autoplay>
@@ -201,6 +213,9 @@
                 </video>
               </div>
             </div>
+          </div>
+          <!-- Page 7 -->
+          <div class="video-page">
             <div class="video-card">
               <div class="video-container">
                 <video controls loop muted playsinline preload="none" autoplay>
@@ -208,6 +223,9 @@
                 </video>
               </div>
             </div>
+          </div>
+          <!-- Page 8 -->
+          <div class="video-page">
             <div class="video-card">
               <div class="video-container">
                 <video controls loop muted playsinline preload="none" autoplay>
@@ -216,7 +234,7 @@
               </div>
             </div>
           </div>
-          <!-- Page 3: Videos 9-12 -->
+          <!-- Page 9 -->
           <div class="video-page">
             <div class="video-card">
               <div class="video-container">
@@ -225,6 +243,9 @@
                 </video>
               </div>
             </div>
+          </div>
+          <!-- Page 10 -->
+          <div class="video-page">
             <div class="video-card">
               <div class="video-container">
                 <video controls loop muted playsinline preload="none" autoplay>
@@ -232,6 +253,9 @@
                 </video>
               </div>
             </div>
+          </div>
+          <!-- Page 11 -->
+          <div class="video-page">
             <div class="video-card">
               <div class="video-container">
                 <video controls loop muted playsinline preload="none" autoplay>
@@ -239,6 +263,9 @@
                 </video>
               </div>
             </div>
+          </div>
+          <!-- Page 12 -->
+          <div class="video-page">
             <div class="video-card">
               <div class="video-container">
                 <video controls loop muted playsinline preload="none" autoplay>
@@ -277,14 +304,13 @@
 
     .video-page {
       display: none;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
+      justify-content: center;
       opacity: 0;
       transition: opacity 0.3s ease;
     }
 
     .video-page.active {
-      display: grid;
+      display: flex;
       opacity: 1;
     }
 
@@ -294,6 +320,8 @@
       padding: 1rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 800px;
+      width: 100%;
     }
 
     .video-card:hover {
@@ -387,9 +415,8 @@
         padding: 0 50px;
       }
 
-      .video-page {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+      .video-card {
+        max-width: 100%;
       }
 
       .video-nav-button {
@@ -438,8 +465,14 @@
         prevButton.disabled = currentPage === 0;
         nextButton.disabled = currentPage === pages.length - 1;
 
-        // 懒加载当前页面视频
+        // 懒加载当前页面视频并自动播放
         loadPageVideos(currentPage);
+
+        // 播放当前页面的视频
+        pages[currentPage].querySelectorAll('video').forEach(video => {
+          video.currentTime = 0;
+          video.play().catch(err => console.log('Auto-play prevented:', err));
+        });
       }
 
       // 按钮事件
@@ -503,6 +536,12 @@
       // 初始化第一页
       prevButton.disabled = true;
       loadPageVideos(0);
+
+      // 自动播放第一页视频
+      pages[0].querySelectorAll('video').forEach(video => {
+        video.currentTime = 0;
+        video.play().catch(err => console.log('Auto-play prevented:', err));
+      });
     });
   </script>
 
